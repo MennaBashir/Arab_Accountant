@@ -1,0 +1,42 @@
+{
+    "currentUser": {
+        "image": "https://atg-prod-scalar.s3.amazonaws.com/studentpower/media/user%20avatar.png",
+        "username": "menna"
+    },
+    "comments": [
+        {
+            "id": 1,
+            "content": "هذا المقال رائع",
+            "createdAt": "1 month ago",
+            "score": 12,
+            "user": {
+                "image": "https://atg-prod-scalar.s3.amazonaws.com/studentpower/media/user%20avatar.png",
+                "username": "mohamed"
+            },
+            "replies": []
+        },
+        {
+            "id": 2,
+            "content": "شكرا على مجهودكم ,احببت موقعكم كثيرا",
+            "createdAt": "2 weeks ago",
+            "score": 5,
+            "user": {
+                "image": "https://atg-prod-scalar.s3.amazonaws.com/studentpower/media/user%20avatar.png",
+                "username": "ahmed"
+            },
+            "replies": [
+                {
+                    "id": 3,
+                    "content": "حقا اتفق معك",
+                    "createdAt": "1 week ago",
+                    "score": 4,
+                    "replyingTo": "ahmed",
+                    "user": {
+                        "image": "https://atg-prod-scalar.s3.amazonaws.com/studentpower/media/user%20avatar.png",
+                        "username": "ziad"
+                    }
+                }
+            ]
+        }
+    ]
+}

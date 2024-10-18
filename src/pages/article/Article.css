@@ -1,0 +1,152 @@
+.article {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  box-shadow: 0px 0px 2px 0px #6c757d70;
+  border-radius: 4px;
+  padding: 21px;
+}
+
+.bodyArticle h1 {
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+.bodyArticle p {
+  color: #373b3e;
+}
+
+.bodyArticle div {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.bodyArticle img {
+  max-width: 100%;
+}
+
+.shareArticle p {
+  font-weight: bold;
+  font-size: 18px;
+  color: #495057;
+  background-color: #dee2e6;
+  width: fit-content;
+  padding: 6px 10px;
+}
+
+.shareArticle .icons {
+  display: flex;
+  gap: 10px;
+}
+
+.shareArticle a img {
+  width: 22px;
+}
+
+.article .moreArticle {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin-top: 20px;
+  padding-top: 20px;
+  gap: 10px;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  border-top: 2px solid #eee;
+}
+
+@media (max-width: 767px) {
+  .article .moreArticle {
+    grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+  }
+}
+
+.moreArticle .more {
+  position: relative;
+  box-shadow: 0px 0px 0px 2px #eeeeee91;
+  border-radius: 4px;
+}
+
+.moreArticle .more img {
+  max-width: 100%;
+}
+
+.moreArticle .more p {
+  position: absolute;
+  top: 0;
+  padding: 6px;
+  color: #495057;
+  background-color: #dee2e638;
+}
+
+@keyframes arro {
+  from {
+    right: -3px;
+  }
+
+  to {
+    right: 3px;
+  }
+}
+
+.article .nextPrev {
+  display: flex;
+  margin-top: 40px;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.nextPrev .next,
+.nextPrev .prev {
+  box-shadow: 0px 0px 0px 1px #eee;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.nextPrev .textnext img,
+.nextPrev .textprev img {
+  margin: 0px 6px;
+  width: 60px;
+}
+
+.nextPrev .imgnext,
+.nextPrev .imgprev {
+  margin: 0px !important;
+  width: 20px !important;
+  position: relative;
+}
+.nextPrev .imgnext {
+  margin-right: 6px !important;
+}
+.textprev,
+.textnext {
+  position: relative;
+}
+
+.nextPrev span {
+  color: #30426a;
+}
+
+.textnext:hover .imgnext {
+  animation: arrowNext 0.5s linear infinite;
+}
+.textprev:hover .imgprev {
+  animation: arrowPrev 0.5s linear infinite;
+}
+@keyframes arrowNext {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: -5px;
+  }
+}
+@keyframes arrowPrev {
+  from {
+    right: 0;
+  }
+
+  to {
+    right: 5px;
+  }
+}

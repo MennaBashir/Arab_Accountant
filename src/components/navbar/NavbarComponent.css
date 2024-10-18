@@ -1,0 +1,139 @@
+
+.dropdown div,
+.searchfield div {
+    left: revert !important;
+    text-align: revert;
+    padding: 6px;
+    background-color: #373b3e;
+}
+
+@media (min-width: 800px) {
+    .searchfield div {
+        right: -170px !important;
+    }
+}
+
+.navbar .active {
+    color: #0d6efd;
+}
+
+.dropdown a {
+    color: #dee2e6;
+}
+
+.searchfield a {
+    color: transparent !important;
+}
+
+.dropdown a:hover {
+    color: #adb5bd;
+    transition: .2s;
+}
+
+.linkbar a {
+    color: #e9ecef
+}
+
+.linkbar a:hover {
+    color: #0d6efd;
+    transition: .2s;
+}
+
+@media (min-width:1000px) {
+    .linkbar a {
+        text-align: center;
+    }
+}
+
+.navbar .loginSearch {
+    display: flex;
+    gap: 5px;
+    margin-right: 6px;
+}
+
+.navbar .imgUser {
+    width: 35px;
+    cursor: pointer;
+}
+
+/* style login */
+.containerLogin {
+    background-color: #3C3F41;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    margin: auto;
+    text-align: right;
+    color: #FFF;
+    font-family: Arial sans-serif;
+    display: none;
+}
+
+.activeLogin {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.titleLogin {
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.inputLogin {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: whitesmoke;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #dee2e6;
+}
+.inputLogin::placeholder{
+    color: whitesmoke;
+}
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancelButton {
+    background-color: #981c1c;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.submitButton {
+    background-color: #1e3f68;
+    border: none;
+    color: white;
+    padding: 10px 21px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.switchText {
+    margin-top: 20px;
+    font-size: 17px;
+    color: #fbfbf9;
+}
+
+.switchLink {
+    color: #6f81bf;
+    cursor: pointer;
+}
+@media (max-width:767px) {
+    .containerLogin {
+        width: 70%;
+    }
+}

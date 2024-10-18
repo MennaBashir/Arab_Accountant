@@ -1,0 +1,23 @@
+.commonHead {
+    background-color: #eee;
+    margin-top: 40px;
+}
+
+.commonHead h1 {
+    background-color: #2196f3;
+    font-size: 20px;
+    padding: 8px 12px;
+    width: fit-content;
+    color: whitesmoke;
+    position: relative;
+}
+
+.commonHead h1 span:last-child {
+    background-color: transparent;
+    position: absolute;
+    border-style: solid;
+    border-color: #2196f3;
+    border-width: 20px;
+    top: 0;
+    transform: skewX(332deg);
+}
